@@ -1,0 +1,39 @@
+header {
+    background-color: rgba(46, 49, 49, 0.954);
+    text-align: center;
+    font-style: inherit;
+    color: gold;
+    font-size: 40px;
+  }
+  
+  .starshipBtn {
+    background-color: #417d97;
+    color: rgb(231, 161, 76);
+    margin: 15px;
+    padding: 40px;
+    width: 200px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .starshipsDiv {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .shipDiv {
+    background-color: #417d97;
+    color: white;
+    margin: 150px auto;
+    padding: 40px;
+    width: 500px;
+    border-radius: 5px;
+  }
+  
+  .returnBtn {
+    color: black;
+    text-decoration: underline;
+  }
