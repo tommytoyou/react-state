@@ -5,17 +5,29 @@ import './style.css';
 import StarshipPage from './StarshipPage';
 import Home from './Home';
 
-function App() {
-  // starships
-  let [starships, setStarships] = useState([]);
 
-  // make an axios call and update the starships
-  useEffect(() => {
-    axios.get('https://swapi.dev/api/starships/')
-    .then(response => {
-      setStarships(response.data.results);
-    })
-  }, [])
+function App() {
+  const [data, setdata] = useState([])
+  useEffect(()=> {
+    const getData = async()=> {
+      let response = await fetch ('https://swapi.dev/api/starships/')
+    response = await response.json()
+    response = response.results
+    }
+    getData()
+  },[])  
+
+// function App() {
+//   // starships
+//   let [starships, setStarships] = useState([]);
+
+//   // make an axios call and update the starships
+//   useEffect(() => {
+//     axios.get('https://swapi.dev/api/starships/')
+//     .then(response => {
+//       setStarships(response.data.results);
+//     })
+//   }, [])
 
   return(
     <>
